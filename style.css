@@ -1,23 +1,24 @@
-/* 1. ЭПИЧНЫЙ ФОН С КАРТИНКОЙ */
 body {
     font-family: Arial, sans-serif;
     color: white;
+    
+    /* СТРАХОВКА: Если картинка удалится, фон будет темным, а не белым */
+    background-color: #1a1a1a; 
+    
+    /* БЕРЕМ КАРТИНКУ ИЗ ТВОЕЙ ПАПКИ (убедись, что название совпадает) */
+    background-image: url('bg.jpg'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    
-    /* Добавляем картинку по ссылке из интернета */
-    background-image: url('https://images.alphacoders.com/133/1338576.png');
-    
-    /* Настройки, чтобы картинка идеально легла на весь экран */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
-
 .container {
     background: rgba(44, 47, 51, 0.85); /* Полупрозрачная темная карточка */
     padding: 30px;
