@@ -159,3 +159,16 @@ button:hover {
     width: 0%; /* Изначально пустая */
     transition: width 0.6s ease-in-out, background-color 0.6s ease-in-out;
 }
+
+/* --- НОВЫЙ ВИЗУАЛ: ПУЛЬСАЦИЯ ТРЕВОГИ --- */
+@keyframes pulse-warning {
+    0% { transform: scale(1); text-shadow: 0 0 5px rgba(255, 76, 76, 0.5); }
+    50% { transform: scale(1.05); text-shadow: 0 0 15px rgba(255, 76, 76, 1); }
+    100% { transform: scale(1); text-shadow: 0 0 5px rgba(255, 76, 76, 0.5); }
+}
+
+/* Применяем анимацию к предупреждению, когда оно появляется */
+#abnormalWarning:not(:empty) {
+    display: block; /* Убедимся, что блок виден для анимации */
+    animation: pulse-warning 1.5s infinite ease-in-out;
+}
