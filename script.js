@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             classificationEl.style.color = "#ffaa00"; 
             dangerMeter.style.width = '50%';
             dangerMeter.style.backgroundColor = '#ffaa00'; 
-            titanImg.src = 'huge.gif'; // Твоя гифка для среднего
+            titanImg.src = 'hugee.gif'; // Твоя гифка для среднего
         } else {
             // МЕЛКИЙ (меньше 5 метров)
             classificationText = "КЛАСС: МЕЛКИЙ ТИТАН.";
