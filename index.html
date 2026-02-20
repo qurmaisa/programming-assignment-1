@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Калькулятор Массы Титана</h1>
+        <h1>Калькулятор Массы</h1>
         
         <div class="input-group">
             <label>Имя разведчика:</label>
-            <input type="text" id="scoutName" placeholder="Имя">
+            <input type="text" id="scoutName" placeholder="Например: Армин">
         </div>
 
         <div class="input-group">
@@ -30,13 +30,25 @@
             <label for="isAbnormal">Аномальное поведение?</label>
         </div>
 
-        <button id="calculateBtn">Провести анализ</button>
+        <div class="button-group">
+            <button id="calculateBtn">Провести анализ</button>
+            <button id="resetBtn">Новая цель</button>
+        </div>
 
         <div id="output">
             <h2 id="greeting"></h2>
+            <img id="titanImage" src="" alt="Фоторобот Титана" style="display: none;">
+            
             <p id="massResult"></p>
             <p id="classification"></p>
             <p id="abnormalWarning"></p>
+
+            <div id="meterContainer" style="display: none;">
+                <p style="margin-bottom: 5px; color: #ccc;">Уровень угрозы:</p>
+                <div class="meter-bg">
+                    <div id="dangerMeter" class="meter-fill"></div>
+                </div>
+            </div>
         </div>
     </div>
 
