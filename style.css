@@ -1,97 +1,43 @@
-/* Общие настройки страницы: темный фон и строгий шрифт */
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, sans-serif;
     background-color: #1a1a1a;
-    color: #e0e0e0;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
-
-/* Главная карточка калькулятора */
 .container {
-    background-color: #2c2f33;
-    padding: 30px;
+    background: #2c2f33;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    border: 2px solid #5c6e58; /* Темно-зеленый цвет плащей Разведкорпуса */
-    max-width: 400px;
+    border: 2px solid #5c6e58;
     text-align: center;
+    width: 350px;
 }
-
-h1 {
-    color: #8c9c88;
-    font-size: 24px;
-    margin-bottom: 5px;
-}
-
-p {
-    color: #a0a0a0;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-/* Настройки для полей ввода */
 .input-group {
     margin-bottom: 15px;
     text-align: left;
 }
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input {
+input[type="text"], input[type="number"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #555;
-    border-radius: 4px;
-    background-color: #1e1e1e;
-    color: #fff;
-    box-sizing: border-box; 
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
 }
-
-/* Кнопка */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
 button {
-    background-color: #5c6e58; /* Зеленый цвет */
+    background-color: #5c6e58;
     color: white;
-    border: none;
-    padding: 12px 20px;
+    padding: 10px;
     width: 100%;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #4a5946; /* При наведении кнопка темнеет */
-}
-
-/* Блок результатов */
-#output {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #555;
-}
-
-#greeting {
-    color: #fff;
-    font-size: 18px;
-}
-
-#massResult {
-    font-size: 16px;
     font-weight: bold;
-    color: #d4af37; /* Золотистый цвет для цифр */
+    border: none;
 }
-
-#classification {
-    font-size: 16px;
-    font-weight: bold;
-}
+#abnormalWarning { color: #ff4c4c; font-weight: bold; }
+#massResult { color: #d4af37; font-weight: bold; }
