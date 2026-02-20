@@ -26,12 +26,18 @@
             <input type="number" id="titanWidth" placeholder="Например: 4">
         </div>
 
+        <div class="input-group checkbox-group">
+            <input type="checkbox" id="isAbnormal">
+            <label for="isAbnormal">Аномальное поведение?</label>
+        </div>
+
         <button id="calculateBtn">Провести анализ</button>
 
         <div id="output">
             <h2 id="greeting"></h2>
             <p id="massResult"></p>
             <p id="classification"></p>
+            <p id="abnormalWarning"></p> 
         </div>
     </div>
 
