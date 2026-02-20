@@ -2,21 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Mass Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Калькулятор Истинной Массы Титана</h1>
+        <p>Секретная разработка Ханджи Зоэ</p>
 
-<h1>Personal Calculator</h1>
+        <div class="input-group">
+            <label for="scoutName">Имя разведчика:</label>
+            <input type="text" id="scoutName" placeholder="Например: Армин">
+        </div>
 
-<form id="calculatorForm">
-    <!-- Add input fields here -->
-</form>
+        <div class="input-group">
+            <label for="titanHeight">Рост титана (в метрах):</label>
+            <input type="number" id="titanHeight" placeholder="Например: 15">
+        </div>
 
-<div id="output">
-    <!-- Results will be displayed here -->
-</div>
+        <div class="input-group">
+            <label for="titanWidth">Примерная ширина (в метрах):</label>
+            <input type="number" id="titanWidth" placeholder="Например: 4">
+        </div>
 
-<script src="script.js"></script>
+        <button id="calculateBtn">Провести анализ</button>
+
+        <div id="output">
+            <h2 id="greeting"></h2>
+            <p id="massResult"></p>
+            <p id="classification"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
