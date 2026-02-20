@@ -19,6 +19,18 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+/* --- НОВЫЙ ВИЗУАЛ: СТРОГИЕ ЗАГОЛОВКИ --- */
+h1, #classification, #greeting {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-transform: uppercase; /* Все буквы заглавные */
+    letter-spacing: 1.5px; /* Немного раздвинем буквы */
+}
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Тень для объема */
+}
+
 .container {
     background: rgba(44, 47, 51, 0.85); /* Полупрозрачная темная карточка */
     padding: 30px;
