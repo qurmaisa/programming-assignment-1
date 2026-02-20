@@ -1,43 +1,120 @@
+/* 1. ЭПИЧНЫЙ ФОН С КАРТИНКОЙ */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    
+    /* Добавляем картинку по ссылке из интернета */
+    background-image: url('https://images.alphacoders.com/133/1338576.png');
+    
+    /* Настройки, чтобы картинка идеально легла на весь экран */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
+
 .container {
-    background: #2c2f33;
-    padding: 20px;
-    border-radius: 8px;
+    background: rgba(44, 47, 51, 0.85); /* Полупрозрачная темная карточка */
+    padding: 30px;
+    border-radius: 12px;
     border: 2px solid #5c6e58;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); /* Глубокая тень */
     text-align: center;
     width: 350px;
+    backdrop-filter: blur(5px); /* Эффект размытия заднего фона */
 }
+
+h1 {
+    font-size: 24px;
+    color: #8c9c88;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
 .input-group {
     margin-bottom: 15px;
     text-align: left;
 }
+
+/* Красивые поля ввода */
 input[type="text"], input[type="number"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     box-sizing: border-box;
     margin-top: 5px;
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #5c6e58;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
 }
+
+/* Подсветка поля при вводе текста */
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #a0d468;
+    box-shadow: 0 0 8px rgba(160, 212, 104, 0.4);
+}
+
 .checkbox-group {
     display: flex;
     align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
+
+.checkbox-group input {
+    cursor: pointer;
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    color: #d4af37;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 2. ЖИВАЯ КНОПКА */
 button {
     background-color: #5c6e58;
     color: white;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
     cursor: pointer;
     font-weight: bold;
+    font-size: 16px;
     border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Плавность эффектов */
 }
-#abnormalWarning { color: #ff4c4c; font-weight: bold; }
-#massResult { color: #d4af37; font-weight: bold; }
+
+button:hover {
+    background-color: #6a7f65;
+    box-shadow: 0 0 15px rgba(92, 110, 88, 0.8); /* Свечение */
+    transform: translateY(-2px); /* Легкий прыжок вверх */
+}
+
+/* 3. АНИМАЦИЯ ПОЯВЛЕНИЯ РЕЗУЛЬТАТОВ */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#output {
+    margin-top: 20px;
+}
+
+#output h2, #output p {
+    animation: fadeUp 0.5s ease-out forwards; /* Применяем анимацию */
+}
+
+#abnormalWarning { color: #ff4c4c; font-weight: bold; text-transform: uppercase; }
+#massResult { color: #d4af37; font-weight: bold; font-size: 18px; }
