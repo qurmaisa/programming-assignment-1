@@ -2,17 +2,15 @@ body {
     font-family: Arial, sans-serif;
     color: white;
     
-    /* СТРАХОВКА: Если картинка удалится, фон будет темным, а не белым */
-    background-color: #1a1a1a; 
-    
-    /* БЕРЕМ КАРТИНКУ ИЗ ТВОЕЙ ПАПКИ (убедись, что название совпадает) */
-    background-image: url('bg.jpg.jpg'); 
+    /* Тот самый рабочий фон из интернета */
+    background-image: url('https://w.forfun.com/fetch/f2/f29054da136a5c1bc256b783abdf87ce.jpeg');
     
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     
+    /* Центрируем карточку */
     display: flex;
     justify-content: center;
     align-items: center;
