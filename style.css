@@ -6,7 +6,7 @@ body {
     background-color: #1a1a1a; 
     
     /* БЕРЕМ КАРТИНКУ ИЗ ТВОЕЙ ПАПКИ (убедись, что название совпадает) */
-    background-image: url('bg.jpg'); 
+    background-image: url('bg.jpg.jpg'); 
     
     background-size: cover;
     background-position: center;
